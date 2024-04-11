@@ -16,7 +16,9 @@ public class Conexao {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Erro ao conectar com o banco " + e.getMessage());            
         }
+        
         JOptionPane.showMessageDialog(null, "Conectou com o banco");
+        System.out.println("Conectou");
         return null;
     }    
 }

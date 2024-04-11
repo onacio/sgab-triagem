@@ -2,9 +2,9 @@ package models;
 
 /**
  *
- * @author Onacio
+ * @author coab
  */
-public class TriagemModel {
+public class Coleta {
     private int id;
     private String dt_registro;
     private String nome;
@@ -67,7 +67,5 @@ public class TriagemModel {
 
     public void setUnidade(String unidade) {
         this.unidade = unidade;
-    }
-
-    
+    }    
 }

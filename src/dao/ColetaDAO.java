@@ -4,20 +4,19 @@ import jdbc.Conexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import javax.swing.JOptionPane;
-import models.TriagemModel;
-
+import models.Coleta;
 /**
  *
- * @author Onacio
+ * @author coab
  */
-public class TriagemDAO {  
+public class ColetaDAO {
     private Connection conn;
     
-    public TriagemDAO(){
+    public ColetaDAO(){
         this.conn = new Conexao().pegarConexao();        
     }
     
-    public void salvar(TriagemModel obj){
+    public void salvar(Coleta obj){
         
         try {
             String sql = "INSERT INTO coleta (dt_registro, nome, tipo, dt_nascimento, dt_coleta, unidade) VALUES (?,?,?,?,?,?)";
@@ -36,5 +35,5 @@ public class TriagemDAO {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Erro ao conectar com o banco " + e.getMessage());            
         }        
-    }
+    }    
 }
