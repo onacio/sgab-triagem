@@ -6,6 +6,7 @@ package models;
  */
 public class TriagemModel {
     private int id;
+    private String dt_registro;
     private String nome;
     private String tipo;
     private String dt_nascimento;
@@ -18,6 +19,14 @@ public class TriagemModel {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getDt_registro() {
+        return dt_registro;
+    }
+
+    public void setDt_registro(String dt_registro) {
+        this.dt_registro = dt_registro;
     }
 
     public String getNome() {
@@ -59,6 +68,6 @@ public class TriagemModel {
     public void setUnidade(String unidade) {
         this.unidade = unidade;
     }
-    
+
     
 }
